@@ -25,6 +25,11 @@ def step_impl(context):
 
 @then('User must successfully login to dashboard page')
 def step_impl(context):
-    text = context.driver.find_element_by_xpath("//h1[contains(text(),'Dashboard')]").text
-    assert text == "Dashboard"
-    context.driver.close()
+    try:
+        text = context.driver.find_element_by_xpath("//h1[contains(text(),'Dashboard')]").text
+    except:
+        context.driver.close()
+        assert False, "Test Failed"
+    if text == "Dashboard":
+        context.driver.close()
+        assert True, "Test Passed"
