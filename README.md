@@ -6,3 +6,6 @@
 
 #Scenario Outline
 ![Screenshot (54)](https://user-images.githubusercontent.com/68693212/136445855-a2bffa3e-9fd7-4334-af4f-e36b295c9135.png)
+ 
+ #Behave Background
+ ![Screenshot (55)](https://user-images.githubusercontent.com/68693212/136452980-8ec970fb-279d-466c-8782-aa3cfb5301be.png)
